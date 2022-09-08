@@ -8,7 +8,7 @@ int main(){
 	scanf("%f",&nota1[i]);		
 	}
 	for(i=0;i<3;i++){
-		printf("Nota: %.2f\n", nota1[i]);
+		printf("Nota: %.1f\n", nota1[i]);
 	}
 	
 	for(i=0;i<3;i++){
@@ -16,6 +16,14 @@ int main(){
 	scanf("%f",&nota2[i]);
 	}
 	for(i=0;i<3;i++){
-		printf("Nota:%.2f\n",nota2[i]);
+		printf("Nota:%.1f\n",nota2[i]);
 	}
+	
+	for(i=0;i<3;i++){
+		media[i]=(nota1[i]+ nota2[i])/2;
+	}
+	for (i=0;i<3;i++){
+		printf("Media: %.2f\n", media[i]);
+	}
+	
 }
